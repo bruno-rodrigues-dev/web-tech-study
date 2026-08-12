@@ -1,0 +1,69 @@
+body {
+    background-color: rgb(236, 199, 233);
+}
+
+.container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto; 
+}
+
+header {
+    height: 100px;
+    background: rgb(212, 144, 192);
+}
+
+header h1 {
+    font-size: 35px;
+    color: aliceblue;
+    padding: 25px;
+}
+
+.content {
+    max-width: 400px;
+    border: 1px solid rgb(139, 136, 136);
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: #faf8f8;
+}
+
+.headerCad {
+    height: 80px;
+    background: rgb(212, 144, 192);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerCad h1 {
+    color: #fff;
+    font-size: 25px;
+}
+
+.form-group, .form-button {
+    margin: 10px;
+}
+
+.form-group label {
+    font-weight: bold;
+    font-size: 18px;
+    padding-bottom: 10px;
+    display: block;
+}
+
+.form-group input[type="text"], .form-group input[type="email"], .form-group input[type="tel"] {
+    border: 2px solid rgb(176, 174, 179);
+    width: 95%;
+    height: 25px;
+    outline: none;
+    padding-left: 5px;
+}
+
+.form-button button {
+    background: rgb(214, 130, 214);
+    color: aliceblue;
+    padding: 10px;
+    border: 0;
+    cursor: pointer;
+}

@@ -1,4 +1,4 @@
-const Header = () => {
+const Header = (props) => {
 
     const headerStyle = {
         background: '#BEBEBE',
@@ -13,9 +13,11 @@ const Header = () => {
         color: '#191970'
     }
 
+    console.log(props)
+
     return(
         <header style = {headerStyle}>
-            <h1 style={titleStyle}>Introdução React</h1>
+            <h1 style={titleStyle}>{props.title}</h1>
         </header>
     )
 }

@@ -1,18 +1,23 @@
 import "./Card.css"
 
-//Import da Imagem
 import imgCard from "../assets/img-card.jpg"
 
-const Card = () => {
+const Card = (props) => {
     return (
         <section>
             <article className="card">
-                <img src={imgCard} className="img-card"/>
-                <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, numquam!</p>
+                <img
+                    src={imgCard}
+                    alt={props.caption || "Imagem"}
+                    className="img-card"
+                />
+
+                <p className="card-text">{props.caption}</p>
             </article>
+
             <hr />
         </section>
     )
 }
 
-export default Card;
+export default Card

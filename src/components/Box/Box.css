@@ -1,0 +1,42 @@
+.container-box {
+  width: 315px;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 40px;
+}
+
+.image {
+  width: 247px;
+  height: 370px;
+  object-fit: cover;
+
+}
+
+.title-box {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #333;
+}
+
+.description {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.box-container {
+  display: flex;
+}
+
+.box {
+  width: 45%;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: center;
+}

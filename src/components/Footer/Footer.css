@@ -1,0 +1,24 @@
+#root {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+    background-color: #000bac;
+    padding: 20px;
+    border-bottom: 2px solid #1100ff;
+    margin-top: auto;
+}
+
+.title-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.texto-footer {
+    font-size: 20px;
+    margin: 0;
+    color: #ffffff;
+    text-align: center;
+}

@@ -1,0 +1,33 @@
+main {
+    max-width: 800px;
+    border: 2px solid red;
+    margin: 0 auto;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form-group {
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.form-group input {
+    border-radius: 20px;
+    width: 90%;
+    height: 25px;
+}
+
+button {
+    background-color: brown;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.sumir {
+    display: none;
+}

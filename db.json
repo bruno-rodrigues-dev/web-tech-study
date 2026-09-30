@@ -1,0 +1,48 @@
+{
+  "usuarios": [
+    {
+      "nome": "João Silva",
+      "telefone": "11999990001",
+      "email": "josi@gmail.com",
+      "id": "Ac6ivo9LcAk"
+    },
+    {
+      "nome": "Caio",
+      "telefone": "44444444",
+      "email": "caio@gmail.com",
+      "id": "qqenKgJbQxs"
+    },
+    {
+      "nome": "Juliana",
+      "telefone": "11111111",
+      "email": "juliana@gmail.com",
+      "id": "RlWzhpThWtg"
+    }
+  ],
+  "faq": [
+    {
+      "id": "1",
+      "pergunta": "O que é JSON Server?",
+      "resposta": "JSON Server é uma ferramenta que permite ..."
+    },
+    {
+      "id": "2",
+      "pergunta": "Como instalar o JSON Server?",
+      "resposta": "Você pode instalar o JSON Server usando o npm com ..."
+    },
+    {
+      "id": "3",
+      "pergunta": "Posso usar JSON Server em produção?",
+      "resposta": "JSON Server é ótimo para desenvolvimento ..."
+    }
+  ],
+  "duvidas": [
+    {
+      "nome": "Bruno",
+      "email": "bruno.r.santos10@edu.senai.br",
+      "duvida": "Quanto custa o jogo x?\n",
+      "id": "imxNmEoDGx4"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

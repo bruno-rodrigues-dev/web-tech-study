@@ -10,6 +10,9 @@ export default function index() {
             <li><Link to="/">Home</Link></li>
             <li><Link to="/sobre">Sobre</Link></li>
             <li><Link to="/duvida">Duvida</Link></li>
+            <li><Link to="/usuarios">Usuarios</Link></li>
+            <li><Link to="/cadastro">Cadastro</Link></li>
+            <li><Link to="/news">News</Link></li>
         </ul>
     </nav>
   )

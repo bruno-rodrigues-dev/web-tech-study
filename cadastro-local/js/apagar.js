@@ -1,9 +1,9 @@
-const apagarBtn = document.querySelector("#apagar")
+const apagarBtn = document.querySelector("#apagar");
 
-apagarBtn.addEventListener("click", function(event){
-    //Limpa todos os valores
-    localStorage.clear()
+apagarBtn.addEventListener("click", (event) => {
+    event.preventDefault();
+    //apaga os valores do local storage
 
-    //limpa lista da interface
-    listaValores.innerHTML = ""
+    localStorage.clear();
+    listaValores.innerHTML = "";
 })

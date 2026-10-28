@@ -1,24 +1,24 @@
-const campo = document.querySelector("#campo")
-const salvarBtn = document.querySelector("#salvar")
+const campo = document.querySelector("#campo");
+const salvarBtn = document.querySelector("#salvar");
 
-//adicionar evento clicl no botão salvar
-salvarBtn.addEventListener('click', function(event){
-    event.preventDefault()
-    const valor = campo.value
 
-    console.log(valor);
+salvarBtn.addEventListener("click", (event) => {
+    event.preventDefault();
+    const valor = campo.value;
 
-    if(!valor.trim() === ""){
-        alert("Campo vazio, digite algo")
+    console.log(valor)
+
+    if(!valor.trim()){
+        alert("O campo não pode estar vazio");
     }
 
-    //Salvar no localstorage
-    const chave = `ValorSalvo_${Date.now()}`
+    //limpar campo
+    campo.value = "";
+
+    //salvar no localStorage
+    const chave = `ValorSalvo_${Date.now()}`;
     localStorage.setItem(chave, valor)
 
-    //Limpar campo após salvar
-    campo.value = ''
 
-    //exibir os valores salvos
-    carregarValoresSalvos()
-});
+    carregarValores();
+})

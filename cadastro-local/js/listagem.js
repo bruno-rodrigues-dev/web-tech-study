@@ -1,19 +1,22 @@
-const listaValores = document.querySelector("#listaValores")
+const listaValores = document.querySelector("#listaValores");
 
-//Carregar valores ao iniciar a pagina
-carregarValoresSalvos();
+carregarValores();
 
-//função para carregar valores na lista
-function carregarValoresSalvos(){
-    listaValores.innerHTML = ""
-    for(let i = 0; i < localStorage.length; i++) {
-        const chave = localStorage.key(i)
+function carregarValores(){
+    listaValores.innerHTML = "";
 
-        if(chave.startsWith(`ValorSalvo`)) { //filtra as chaves
-            const valor = localStorage.getItem(chave)
-            const listItem = document.createElement("li")
+    for(let i = 0; i < localStorage.length; i++){
+
+        const chave = localStorage.key(i); 
+
+        
+        if(chave && chave.startsWith("ValorSalvo")){
+            const valor = localStorage.getItem(chave);
+            
+            const listItem = document.createElement("li");
             listItem.textContent = valor;
-            listaValores.appendChild(listItem)
+
+            listaValores.appendChild(listItem);
         }
     }
 }

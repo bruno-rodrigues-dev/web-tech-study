@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Faustina:ital,wght@0,300..800;1,300..800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(https://images5.alphacoders.com/835/835652.png);
+}
+
+/* padrão c8e2e9 */
+
+main{
+    margin: auto;
+    max-width: 900px;
+    background-color: #c8e2e9;
+    height: 100vh;
+    padding: 40px;
+    box-shadow: 1px 1px 10px #414041;
+}
+
+.titulo{
+    text-align: center;
+    font-family: "Cormorant Garamond", serif;
+
+}
+
+.img-container{
+    margin: 30px auto;
+    width: fit-content;
+}
+
+h2{
+    font-family: "Cormorant Garamond", serif;
+    font-size: 26px;
+
+}
+
+.descricao{
+    font-family: "Faustina", serif;
+    margin: 10px 0;
+    font-family: 19px;
+    text-indent: 0.4cm;
+}
+
+.container-btn{
+    margin: auto;
+    width: fit-content;
+}
+
+#btn{
+    margin:5px;
+    padding: 10px 14px;
+    border: none;
+    border-radius: 10px; 
+    box-shadow: 1px 1px 6px #474747;
+    background-color: #504747;
+    color: #fff;
+}
+
+#btn:hover{
+
+    background-color: #747171;
+}

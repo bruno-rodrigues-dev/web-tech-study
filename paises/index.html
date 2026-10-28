@@ -1,25 +1,23 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Países</title>
-    <link rel="stylesheet" href="css/style.css">
-
+    <title>Lista de Países</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <main class="container">
-        <h1>Lista de Países</h1>
-        
-        <button onclick="listarPaises()">
-            Mostrar Países
-        </button>
+<body onload="listarPaises()">
 
-        <ul id="listaPaises">
-            
-        </ul>
+    <main class="container">
+        <h1>Países</h1>
+
+        <ul id="listaPaises"></ul>
+
+        <hr>
+
+        <h2 id="quantidadePaises"></h2>
     </main>
 
-    <script src="./js/script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

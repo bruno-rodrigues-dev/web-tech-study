@@ -1,3 +1,3 @@
-let times = ["Corinthians", "Palmeiras", "Flamengo"];
+let times = ["Bangu", "Pulista", "Botafogo"];
 
-console.log(times.includes("Flamengo"));
+console.log(times.includes("Bangu"))

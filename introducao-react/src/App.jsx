@@ -1,35 +1,44 @@
-import Header from "./Components/Header"
-import Card from "./Components/Card"
-import Footer from "./Components/Footer"
-import Banner from "./Components/Banner"
-import BlackCloverCard from "./Components/BlackCloverCard"
+
+import './App.css'
+import Album from './components/Album'
+// import StrangerThings from './components/StrangerThings/StrangerThings'
+import Banner from './components/Banner'
+import Box from './components/Box'
+import Card from './components/Card'
+import Count from './components/Count'
+import Footer from './components/Footer'
+import Header from './components/Header'
+import ImgCard from './components/ImgCard'
 
 function App() {
+
   return (
     <>
-      <Header title="Meu site" />
 
-      <Header title="Lorem Ipsum" />
+      {/* <StrangerThings temporada = "Temporada 4, episodio 5" descricao = "Um grupo de amigos enfrenta acontecimentos sobrenaturais em Hawkins.">
 
-      <Header title="Introdução ao React" />
+        <div className='btn-div'><button className='btn'><a href="https://www.netflix.com/br/title/80057281?utm_source=chatgpt.com" target="_blank">Assistir ao episódio</a></button></div>
+      </StrangerThings> */}
 
-      <Card caption="New lorem ipsum" />
+
+      <Header titulo = "Utilizando props"/>
+
+      <Count/>
+
+      <Box/>
+
+      <ImgCard caption = "texto"/>
 
       <Banner>
-        <h1>Bem-vindo ao meu site</h1>
-        <p>Aqui você encontra as melhores ofertas!</p>
+        <h1>Bem vindo</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto, tempora. Corporis odit dolorum autem officia cumque est eius beatae eligendi esse ad repellat repellendus non, facilis nostrum aliquam deserunt maxime!</p>
       </Banner>
 
-      <Card caption="Outra descrição para o card" />
+      <Card/>
+      <Footer titulo = "atividade footer"/>
 
-      <BlackCloverCard title="Black Clover">
-        <p>
-          <strong>A segunda temporada do anime Black Clover tem estreia confirmada para outubro de 2026.
-               A transmissão oficial e simultânea no Brasil será feita pela Crunchyroll.</strong>
-        </p>
-      </ BlackCloverCard>
-
-      <Footer text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, numquam!" />
+      <Album/>
+      
     </>
   )
 }

@@ -1,3 +1,3 @@
-let mensagem = "olá";
+let mensagem = "Olá Senai";
 
 console.log(mensagem);

@@ -1,0 +1,22 @@
+.container-sobre h1, .container-sobre h2{
+    padding: 10px 0;
+
+}
+
+.container-sobre p{
+    text-indent: 1.00cm;
+}
+
+h1{
+    text-align: center;
+}
+.container-sobre{
+    width: 90%;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}

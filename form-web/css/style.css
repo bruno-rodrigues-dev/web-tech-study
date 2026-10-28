@@ -1,69 +1,104 @@
-body {
-    background-color: rgb(236, 199, 233);
+body{
+    background-color: #e3f1fd;
 }
 
-.container {
+.container{
     width: 100%;
     max-width: 1000px;
-    margin: 0 auto; 
+    min-height: 400px;
+    background-color: #e3f1fd;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px #bebebe;
+    margin: 0 auto;
 }
 
-header {
+header{
     height: 100px;
-    background: rgb(212, 144, 192);
+    background-color: #88b5e9;
+    border-radius: 0px 0px 3px 3px;
 }
 
-header h1 {
+header h1{
     font-size: 35px;
-    color: aliceblue;
+    color: #383838;
     padding: 25px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 600;
+    text-decoration: underline;
 }
 
-.content {
+.content{
     max-width: 400px;
-    border: 1px solid rgb(139, 136, 136);
-    margin: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    background: #faf8f8;
+    background-color: #fff;
+    margin: 20px auto;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px #afcff5;
 }
 
-.headerCad {
+.headerCad{
     height: 80px;
-    background: rgb(212, 144, 192);
+    background-color: #022e61;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 5px 5px 0px 0px;
 }
 
-.headerCad h1 {
+.headerCad h1{
     color: #fff;
     font-size: 25px;
+    font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.form-group, .form-button {
+.form-group, .form-button{
     margin: 10px;
+    
 }
 
-.form-group label {
-    font-weight: bold;
+.form-group label{
+    color: #383838;
     font-size: 18px;
-    padding-bottom: 10px;
-    display: block;
+    display: inline-block;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+
 }
 
-.form-group input[type="text"], .form-group input[type="email"], .form-group input[type="tel"] {
-    border: 2px solid rgb(176, 174, 179);
+.form-group input[type="text"]{
+    border: 2px solid #a0a0a0;
     width: 95%;
     height: 25px;
     outline: none;
-    padding-left: 5px;
+    padding: 3px;
+    border-radius: 5px;
+    
 }
 
-.form-button button {
-    background: rgb(214, 130, 214);
-    color: aliceblue;
-    padding: 10px;
-    border: 0;
+.form-button button{
+    background: #022e61;
+    color: #fff;
+    border: none;
+    padding: 9px;
+    border-radius: 5px;
     cursor: pointer;
+    margin-bottom: 10px;
+    
 }
+
+.form-button button:hover{
+    background: #88b5e9;
+}
+
+
+
+ul h2, ul p{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+}
+
+ul h2{
+    font-size: 17px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+

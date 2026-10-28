@@ -1,0 +1,38 @@
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #d2e5f8;
+    padding: 10px;
+    min-height: 12vh;
+    border-top: 1px solid #a4ccf5;
+}
+
+.img-container img{
+    height: 100px;
+    border-radius: 5px;
+    
+}
+
+.socialmedia-container{
+    display: flex;
+    align-items: center;
+    flex-direction:column;
+    
+}
+
+h4{
+    font-weight: 400;
+    margin-bottom: 10px;
+    font-size: 19px;
+}
+
+.socialmedia-container ul{
+    display: flex;
+}
+
+ul li{
+    font-size: 30px;
+    margin: 0 3px ;
+    cursor: pointer;
+}

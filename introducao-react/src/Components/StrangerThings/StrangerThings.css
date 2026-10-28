@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Faustina:ital,wght@0,300..800;1,300..800&display=swap');
+
+.st-secao {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.st-secao::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvmI8qgJZR3oTy0yrkxM9F-f2uviKcv3DzsT7juqB2pF8UljEd_epIX3s&s=10");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: blur(4px);
+    transform: scale(1.05);
+    z-index: -1;
+}
+
+.container{
+    margin: 5% auto;
+    max-width: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+
+.temporada{
+    color: #EB1C24;
+    font-size: 40px;
+    text-shadow: 2px 2px 5px black;
+    font-family: "Faustina", serif;
+    font-weight: bolder;
+}
+
+.descricao{
+    color: #ececec;
+    text-shadow: 2px 2px 5px black;
+    font-family: "Faustina", serif;
+    font-size: 25px;
+}
+
+.btn-div{
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.btn {
+    background-color: #4e0b0e;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    box-shadow: 2px 2px 5px rgb(22, 22, 22);
+
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #681f22;
+    transform: rotate(3deg);
+}
+
+
+
+a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "Faustina", serif;
+    font-weight: bold;
+}

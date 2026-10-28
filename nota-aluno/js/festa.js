@@ -1,7 +1,7 @@
-let idade = 17
+let idade = 18;
 
 if (idade >= 18){
-    console.log("É maior de idade e pode ir para a festa")
-} else {
-    console.log("É de menor e não pode ir para a festa")
+    console.log("Esta liberado para a festa!")
+} else{
+    console.log("Menor de 18 anos. Não esta liberado para a festa!")
 }

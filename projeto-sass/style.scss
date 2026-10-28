@@ -1,0 +1,116 @@
+$cor-principal: #5936cf;
+$cor-fundo: #f2f2f2;
+$cor-texto: #333;
+$espacamento: 20px;
+
+@mixin botao{
+    display: inline-block;
+    padding: 10px;
+    margin: 5px;
+    background: $cor-principal;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 1.0s all;
+    
+    &:hover{
+        background-color: #8a66ff;
+    }
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: $cor-texto;
+}
+
+.estilo-borda{
+    border-radius: 10px;
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+    header{
+        background: #fdf9d5;
+        padding: $espacamento;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        nav{
+            a{
+                color: $cor-texto;
+                text-decoration: none;
+                margin-left: $espacamento;
+
+                &:hover{
+                    color: $cor-principal;
+                    text-decoration: underline
+                }
+            }
+        }
+    }
+
+    .banner{
+        background: $cor-fundo;
+        padding: 60px $espacamento;
+        text-align: center;
+
+        h1{
+            color: $cor-principal;
+        }
+
+        .botao{
+            @include botao();
+        }
+    }
+
+    .servicos{
+        display: flex;
+        gap: $espacamento;
+        padding: 40px $espacamento;
+
+        .card{
+            @extend .estilo-borda;
+            flex: 1;
+            background-color: $cor-fundo;
+            padding: $espacamento;
+
+            h3{
+                color: $cor-principal;
+            }
+
+            &:hover{
+                background-color: #ebe9e9;
+                cursor: pointer;
+            }
+
+            p{
+                line-height: 21px;
+            }
+        }
+    }
+
+    footer{
+        background-color: $cor-principal;
+        color: #fff;
+        padding: $espacamento;
+        text-align: center;
+
+    }
+}
+
+// responsividade
+@media (max-width: 600px) {
+    header{
+        flex-direction: column;
+        
+        nav{
+            margin-top: 10px;
+        }
+    }
+    .servicos{
+        flex-direction: column;
+    }
+    
+}

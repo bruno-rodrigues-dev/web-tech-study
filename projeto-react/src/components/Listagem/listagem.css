@@ -1,0 +1,21 @@
+.container-listagem{
+    width: 90%;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 10px;
+    background-color: #dfdddd;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(5, 5, 5, 0.158);
+}
+
+.container-listagem h2{
+    color: #333333;
+}
+.secao-listaUsuarios{
+    margin: 25px 0;
+}
+
+.titulo-listagem{
+    text-align: center;
+
+}

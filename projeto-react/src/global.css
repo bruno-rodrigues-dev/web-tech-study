@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    min-height: 77vh;
+}
+
+.container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 76vh;
+}
+
+.d-flex{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.secao{
+    min-height: 77vh;
+}

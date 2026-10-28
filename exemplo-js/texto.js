@@ -1,19 +1,19 @@
-let txt = "Está chegando as provas";
+let txt = "Estão chegando as provas";
 
-//tamanho sa string
+// 
 console.log(txt.length);
 
-//Replace - substtuir palavras
-console.log(txt.replace("provas","avaliações"));
+//  troca a palavra por outra 
+console.log(txt.replace("provas", "avaliações"));
 
-//upperCase - tudo maiúsculo
+// transforma os caracteres em maiusculo
 console.log(txt.toUpperCase());
 
-//lowerCase - tudo minisculo
+// transforma os caracteres em minusculo
 console.log(txt.toLowerCase());
 
-//indexOf - Retorna a primeira posição da string
+//retorna a primeira posição na string
 console.log(txt.indexOf("as"));
 
-//lastIndexOf - Retorna a ultima posição
-console.log(txt.lastIndexOf("as"));
+//retorna a ultima posição na string
+console.log(txt.lastIndexOf("as"))

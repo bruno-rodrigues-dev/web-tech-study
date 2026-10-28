@@ -1,0 +1,108 @@
+{
+  "usuarios": [
+    {
+      "nome": "Juliana",
+      "telefone": "5555555",
+      "email": "juliana@gmail.com",
+      "id": "9SaFUBQEla8"
+    }
+  ],
+  "faq": [
+    {
+      "id": "1",
+      "pergunta": "O que é JSON Server?",
+      "resposta": "JSON Server é uma ferramenta que permite ..."
+    },
+    {
+      "id": "2",
+      "pergunta": "Como instalar o JSON Server?",
+      "resposta": "Você pode instalar o JSON Server usando o npm com ..."
+    },
+    {
+      "id": "3",
+      "pergunta": "Posso usar JSON Server em produção?",
+      "resposta": "JSON Server é ótimo para desenvolvimento ..."
+    },
+    {
+      "id": "4",
+      "pergunta": "O que é o arquivo db.json?",
+      "resposta": "O arquivo db.json é onde os dados utilizados pelo JSON Server ficam armazenados. Ele funciona como uma pequena base de dados em formato JSON e pode conter recursos como usuários, produtos e comentários."
+    },
+    {
+      "id": "5",
+      "pergunta": "Como iniciar o JSON Server?",
+      "resposta": "Depois de criar o arquivo db.json, você pode iniciar o JSON Server utilizando o comando json-server --watch db.json. O servidor ficará disponível em um endereço local, normalmente http://localhost:3000."
+    },
+    {
+      "id": "6",
+      "pergunta": "Quais operações posso fazer com JSON Server?",
+      "resposta": "O JSON Server permite realizar operações de CRUD: criar registros com POST, consultar com GET, atualizar com PUT ou PATCH e excluir dados utilizando DELETE."
+    },
+    {
+      "id": "7",
+      "pergunta": "Posso usar JSON Server com React?",
+      "resposta": "Sim. O JSON Server pode ser utilizado com React para simular um backend. O frontend pode fazer requisições utilizando fetch ou Axios para buscar, cadastrar, atualizar e excluir dados."
+    }
+  ],
+  "sobre": [
+    {
+      "id": "1",
+      "titulo": "O que é JSON Server?",
+      "texto": "O JSON Server é uma ferramenta que permite criar uma API REST de forma rápida e simples utilizando apenas um arquivo JSON. Ele é bastante utilizado durante o desenvolvimento de aplicações para simular um backend e facilitar os testes de funcionalidades no frontend."
+    },
+    {
+      "id": "2",
+      "titulo": "Como funciona o JSON Server?",
+      "texto": "Para utilizar o JSON Server, é necessário ter o Node.js instalado no computador. Depois, basta instalar o pacote com o comando npm install -g json-server, criar um arquivo db.json com os dados da aplicação e iniciar o servidor. A ferramenta transforma automaticamente os dados do arquivo JSON em endpoints que podem ser acessados através de requisições HTTP."
+    },
+    {
+      "id": "3",
+      "titulo": "JSON Server em projetos",
+      "texto": "O JSON Server é mais indicado para estudos, protótipos e desenvolvimento de aplicações, não sendo recomendado como solução definitiva para sistemas em produção. Apesar de facilitar a criação de uma API simulada, aplicações reais normalmente precisam de recursos mais avançados, como autenticação, regras de negócio, banco de dados e maior controle sobre as requisições."
+    },
+    {
+      "id": "4",
+      "titulo": "O que são endpoints?",
+      "texto": "Endpoints são os endereços utilizados para acessar os recursos de uma API. No JSON Server, cada recurso criado no arquivo db.json possui automaticamente um endpoint. Por exemplo, se existir um recurso chamado usuarios, ele poderá ser acessado através do endereço http://localhost:3000/usuarios."
+    },
+    {
+      "id": "5",
+      "titulo": "Quais métodos HTTP podem ser utilizados?",
+      "texto": "O JSON Server permite utilizar os principais métodos HTTP para trabalhar com os dados. O GET é usado para buscar informações, o POST para cadastrar novos dados, o PUT e o PATCH para atualizar informações e o DELETE para remover registros."
+    },
+    {
+      "id": "6",
+      "titulo": "Como cadastrar dados?",
+      "texto": "Para cadastrar um novo registro no JSON Server, é possível realizar uma requisição POST para o endpoint desejado. Os dados são enviados no corpo da requisição, normalmente no formato JSON, e o JSON Server adiciona o novo registro ao arquivo db.json."
+    }
+  ],
+  "usuariosNews": [
+    {
+      "nome": "bruna",
+      "email": "bruna@gmail.com",
+      "id": "SMjHqKZOcE4"
+    },
+    {
+      "nome": "luiza",
+      "email": "luiza@gmail.com",
+      "id": "x-YOhlSXMcE"
+    },
+    {
+      "nome": "kauana",
+      "email": "kauana.@gmail.com",
+      "id": "tlT000XSFZg"
+    },
+    {
+      "nome": "bruno",
+      "telefone": "",
+      "email": "bruno@gmail.com",
+      "id": "55PuWhoj0m4"
+    },
+    {
+      "nome": "murilo",
+      "email": "murilo@gmail.com",
+      "id": "B8W1oDh1EkI"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

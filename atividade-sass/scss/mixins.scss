@@ -1,0 +1,20 @@
+@use 'variables' as *;
+
+@mixin btn($bg: $cor-principal, $cor-texto: $cor-fundo, $largura: 170px) {
+  display: inline-block;
+  padding: 16px 10px;
+  background-color: $bg;
+  color: $cor-texto;
+  text-decoration: none;
+  border-radius: 5px;
+  border: 1px solid $bg;
+  width: $largura;
+  text-align: center;
+  font-size: 17px;
+  transition: all $transicao;
+
+  &:hover {
+    background-color: transparent;
+    color: $bg;
+  }
+}

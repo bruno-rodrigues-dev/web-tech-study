@@ -1,0 +1,82 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.banner {
+  padding: 70px $espacamento;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 70px;
+
+  .img-banner {
+    border: 1px solid $cor-principal;
+    border-radius: 20px;
+    width: 40%;
+    margin-right: 90px;
+  }
+
+  .banner-info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    h2 {
+      font-size: 4rem;
+      margin-bottom: 60px;
+    }
+
+    p {
+      font-size: 1.1rem;
+    }
+
+    .btn {
+      @include btn;
+      margin-top: 60px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    padding: 30px $espacamento;
+    margin-bottom: 40px;
+
+    .img-banner {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 2rem;
+    }
+
+    .banner-info {
+      text-align: center;
+      align-items: center;
+
+      h2 {
+        font-size: 2.2rem;
+        margin-bottom: 20px;
+      }
+
+      .btn {
+        margin-top: 30px;
+      }
+    }
+  }
+}
+
+.banner-sobre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 70px;
+
+  .banner-sobre-img {
+    border: 1px solid $cor-principal;
+    border-radius: 20px;
+    width: 100%;
+    height: auto; 
+    display: block;
+    object-fit: cover; 
+  }
+
+  @media (max-width: 768px) {
+    margin-bottom: 40px;
+  }
+}

@@ -1,0 +1,304 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.produtos {
+  display: grid;
+  gap: 2rem;
+  padding: 3rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+  .card-produtos {
+    background-color: $cor-fundo-secundario;
+    border: 1px solid $cor-principal;
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform $transicao, box-shadow $transicao;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    img {
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+      border-radius: 4px;
+      margin-bottom: 1rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .book-info {
+      h3 {
+        font-size: 1.2rem;
+        color: $cor-fonte;
+        margin-bottom: 0.2rem;
+      }
+
+      .author {
+        font-size: 0.9rem;
+        color: $cor-destaque;
+        margin-bottom: 0.5rem;
+        font-style: italic;
+      }
+
+      .price {
+        color: $cor-principal;
+        font-weight: 600;
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+      }
+    }
+
+    .btn-add-cart {
+      @include btn($cor-principal, $cor-fundo, 100%);
+      font-size: 14px;
+      padding: 10px;
+    }
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 1.5rem 1rem;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+
+    .card-produtos {
+      padding: 0.8rem;
+
+      img {
+        height: 200px;
+      }
+
+      h3 {
+        font-size: 0.95rem;
+      }
+
+      .price {
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
+
+.search-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+
+  .search-box {
+    margin-bottom: 2rem;
+    input {
+      width: 100%;
+      max-width: 500px;
+      padding: 12px 20px;
+      border: 2px solid $cor-principal;
+      border-radius: 25px;
+      font-family: $fonte-geral;
+      font-size: 1rem;
+      outline: none;
+      transition: border-color $transicao;
+
+      &:focus {
+        border-color: $cor-destaque;
+      }
+    }
+  }
+
+  .filtros {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    .btn-filtro {
+      padding: 8px 16px;
+      background: transparent;
+      border: 1px solid $cor-principal;
+      color: $cor-principal;
+      border-radius: 20px;
+      cursor: pointer;
+      font-family: $fonte-geral;
+      transition: all $transicao;
+
+      &:hover, &.active {
+        background: $cor-principal;
+        color: $cor-fundo;
+      }
+    }
+  }
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  .cart-icon {
+    position: relative;
+    cursor: pointer;
+    font-size: 1.5rem;
+
+    #cart-count {
+      position: absolute;
+      top: -10px;
+      right: -10px;
+      background: $cor-destaque;
+      color: white;
+      font-size: 0.7rem;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+    }
+  }
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+
+  &.open {
+    display: flex;
+  }
+
+  .modal-content {
+    background: $cor-fundo;
+    padding: 2rem;
+    border-radius: 10px;
+    position: relative;
+    max-width: 800px;
+    width: 90%;
+    max-height: 90vh;
+    overflow-y: auto;
+  }
+
+  .close-modal {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 2rem;
+    cursor: pointer;
+    color: $cor-fonte;
+  }
+
+  .modal-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+
+    img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .modal-text {
+      h2 { color: $cor-principal; margin-bottom: 0.5rem; }
+      .author { font-style: italic; color: $cor-destaque; margin-bottom: 0.5rem; }
+      .category { font-weight: bold; margin-bottom: 1rem; font-size: 0.9rem; }
+      .description { margin-bottom: 1.5rem; line-height: 1.6; }
+      .price { font-size: 1.5rem; font-weight: bold; color: $cor-principal; margin-bottom: 1.5rem; }
+
+      .btn-buy {
+        @include btn($cor-principal, $cor-fundo, 100%);
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .modal-body {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+.cart-modal {
+  .cart-content {
+    width: 400px;
+    max-width: 90%;
+
+    h2 { text-align: center; margin-bottom: 2rem; }
+  }
+
+  .cart-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #ddd;
+
+    img {
+      width: 60px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 4px;
+    }
+
+    .cart-item-info {
+      flex: 1;
+      h4 { font-size: 1rem; margin-bottom: 0.2rem; }
+      p { font-size: 0.9rem; margin-bottom: 0.5rem; }
+
+      .cart-qty {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        button {
+          width: 25px;
+          height: 25px;
+          border: 1px solid $cor-principal;
+          background: transparent;
+          cursor: pointer;
+          border-radius: 50%;
+        }
+        span { font-weight: bold; }
+      }
+    }
+
+    .btn-remove {
+      background: transparent;
+      border: none;
+      color: red;
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+  }
+
+  .cart-footer {
+    margin-top: 2rem;
+    text-align: right;
+    #cart-total {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+    .btn-checkout {
+      @include btn($cor-principal, $cor-fundo, 100%);
+    }
+  }
+
+  .empty-cart {
+    text-align: center;
+    padding: 2rem;
+    color: #888;
+  }
+}
